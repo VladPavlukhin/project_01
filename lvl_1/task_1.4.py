@@ -30,3 +30,12 @@ store = {
 
 # Пример: "Кроссовки тип 3 (Adidas) - 31 шт, стоимость 50747 руб"
 
+for tovar, kod in titles.items():
+    for kod1, tov in store.items():
+        if kod1 == kod:
+            # print(*[v for i in tov for v in i.values()])
+            for dic in tov:
+                a = [dic.get(k) for k in ["quantity", "price"]]
+                stoim = a[0] * a[1]
+                print(f'{tovar} - {a[0]} шт, цена - {a[1]}, стоимость {stoim} руб.')
+

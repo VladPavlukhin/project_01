@@ -54,6 +54,11 @@ print('#########')
 # Сгенерируйте случайные песни с помощью модуля random
 # import random
 
+song1, tm1 = random.choice(list(my_favorite_songs_dict.items()))
+song2, tm2 = random.choice(list(my_favorite_songs_dict.items()))
+song3, tm3 = random.choice(list(my_favorite_songs_dict.items()))
+print(f'Три песни: \n{song1, song2, song3}')
+
 print('#########')
 # Дополнительно
 # Пункт D.
